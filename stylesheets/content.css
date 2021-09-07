@@ -1,0 +1,131 @@
+
+
+h1 {
+    font-size: 3em;
+    font-family: 'Forum', sans-serif !important;
+    font-weight: bold;
+}
+
+.blockquote-hr-left {
+    opacity: 1;
+    border-top: 2px solid var(--dark) !important;
+    color: white;
+    border-bottom: 2px solid var(--dark) !important;
+    height: 6px !important;
+    width: 55% !important;
+}
+
+.blockquote-hr-right {
+    opacity: 1;
+    border-top: 2px solid var(--dark);
+    color: white;
+    border-bottom: 2px solid var(--dark);
+    height: 6px !important;
+    width: 55%;
+}
+
+.blockquote {
+    font-family: 'Gloria Hallelujah', sans-serif;
+    color: var(--accent-purple);
+    font-size: 15px;
+    letter-spacing: 1px;
+    font-family: 'Special Elite', cursive;
+}
+
+.blockquote-footer {
+    margin-top: 1em;
+}
+
+.figure-img {
+    align-self: center;
+    margin: 0 auto;
+    width: 50%;
+    height: auto;
+}
+
+.big-image {
+    align-self: center;
+    width: 100%;
+    height: auto;
+}
+
+.med-img {
+    width: 75%;
+    height: auto;
+}
+
+.example-story > p{
+    font-size: 0.95rem;
+    text-decoration: wavy;
+}
+
+.blockquote-underline {
+    text-decoration: underline;
+}
+
+.unitalic {
+    font-style: normal;
+}
+
+p {
+    font-size: 0.925rem;
+}
+
+.topic-box {
+    background-color: rgb(235, 235, 235);
+    padding: 2em 2em 1em 2em;
+    border-radius: 3px;
+    margin-top: 0;
+}
+
+.article-links {
+    list-style: none;
+    font-family: 'Cousine', monospace;
+}
+
+.section-title {
+    counter-reset: section;
+}
+
+.sub-section-title {
+    counter-reset: subsection;
+}
+.sub-section-title::before {
+    content: counter(section) '. ';
+    counter-increment: section;
+}
+.article-links > li::before {
+    content: counter(section) "." counter(subsection) " ";
+    counter-increment: subsection;
+}
+
+.flaws-ol > li {
+    font-size: 0.9em;
+    margin: 1em;
+}
+
+td {
+    width: 50%;
+}
+
+.content {
+    max-width: 900px;
+}
+
+.content > p {
+    font-size: 17px;
+    font-weight: 500;
+    font-family: "Roboto", serif;
+    line-height: 1.75em;
+    color: black;
+    
+    
+}
+
+.figure-img {
+    box-shadow: 0px 0px 8px #888888;
+}
+
+figcaption {
+    margin-top: 0.5em;
+}

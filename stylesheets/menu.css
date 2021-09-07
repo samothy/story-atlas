@@ -1,0 +1,47 @@
+:root {
+    --accent-purple: #81128b;
+    --light: #f7f7f7;
+    --dark: #212121;
+}
+
+.side-nav {
+    position: fixed;
+    overflow: auto;
+    margin-right: 13em;
+}
+
+.nav {
+    background-color: var(--light);
+    height: 100vh;
+}
+
+.nav-link {
+    padding: 1em;
+}
+
+.nav-item > a {
+    color: var(--dark);
+    font-family: 'Roboto', sans-serif;
+}
+
+.nav-item > a:hover {
+    background-color: var(--accent-purple);
+    color: var(--light);
+}
+
+.nav > .nav-item > a.active {
+    color: var(--light);
+    background-color: var(--accent-purple);
+}
+
+.home-button {
+    width: 100%;
+    background-color: var(--accent-purple);
+    border: none;
+    color: var(--light);
+    font-size: 3em;
+    font-family: 'Bebas Neue', sans-serif;
+    height: 4em;
+    padding: 0 !important;
+    line-height: 1em;
+}
